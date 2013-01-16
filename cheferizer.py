@@ -138,11 +138,4 @@ class EChef:
 	def parse(self, string):
 		return self.X(string)
 
-strings = {"Configuration", "ithaka", "ihiibbkkii", "broke", "chicken", "fairy", "boffin", "courier", "Tariri", "bananna", "aurous", "abbAAbBBBaaaa", "BabbaBBAkkkk", "bathe"}
 
-orig = "Original" 
-chef = "ECHEFERIZED:"
-for s in strings:
-	e = EChef()
-	print orig.ljust(20) + s
-	print chef.ljust(20) + e.parse(s)
