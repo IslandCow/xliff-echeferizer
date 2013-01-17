@@ -1,6 +1,6 @@
 import cheferizer as C
 
-strings = {"Configuration", "ithaka", "ihiibbkkii", "broke", "chicken", "fairy", "boffin", "courier", "Tariri", "bananna", "aurous", "abbAAbBBBaaaa", "BabbaBBAkkkk", "bathe"}
+strings = {"Abba", "STOP", "FERROURS", "ferris", "Configuration", "ithaka", "ihiibbkkii", "broke", "chicken", "fairy", "boffin", "courier", "Tariri", "bananna", "aurous", "abbAAbBBBaaaa", "BabbaBBAkkkk", "bathe"}
 
 orig = "Original" 
 chef = "ECHEFERIZED:"

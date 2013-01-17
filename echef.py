@@ -8,6 +8,10 @@ root = tree.getroot()
 nm = re.search("{.*}", root.tag)
 namespace = nm.group(0)
 
-for	neighbor in root.iter(namespace + 'source') :
+for	neighbor in root.iter(namespace + 'trans-unit') :
 	e = EC.EChef()
-	print e.X(neighbor.text)
+	source = neighbor.findall(namespace + 'source')[0]
+	target = neighbor.findall(namespace + 'target')[0]
+	target.text = e.X(neighbor.text)
+
+tree.write('output.xml')
