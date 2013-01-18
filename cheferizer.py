@@ -122,6 +122,7 @@ class EChef:
 	rules = {'a': A, 'f': F, 't': T, 'i': I, 'o': O, 'w': W, "v": V, "e": E}
 
 	def parse(self, string):
+		print "Parsing...  " + string
 		return self.X(string)
 
 
