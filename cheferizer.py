@@ -119,7 +119,16 @@ class EChef:
 		reps = {"f": "ff"}
 		return self.repl(token, reps, self.fin)
 
-	rules = {'a': A, 'f': F, 't': T, 'i': I, 'o': O, 'w': W, "v": V, "e": E}
+	def uFin(self, string, token):
+		remainder = token[1:]
+		string = "yi"
+		return string, remainder
+
+	def U(self, token):
+		reps = {}
+		return self.repl(token, reps, self.uFin)
+
+	rules = {'a': A, 'f': F, 't': T, 'i': I, 'o': O, 'w': W, "v": V, "e": E, "u": U}
 
 	def parse(self, string):
 		print "Parsing...  " + string
